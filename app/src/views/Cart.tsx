@@ -1,4 +1,5 @@
 import React from 'react'
+import OrderItem from '../components/OrderItem'
 
 export default function Cart() {
   return (
@@ -9,84 +10,7 @@ export default function Cart() {
                 <p className="orderNote">Note: Pick-up not available. No drinking is allowed outside of the bar.</p>
             </div>
             <div className="orderItems">
-                <div className="orderItem">
-                    <div  className="orderItemDetails">
-                        <div className="orderItemImg">
-                            <img src={'./1small.PNG'} alt="" />
-                        </div>
-                        <div>
-                            <p className="orderJpnTitle">ピンクマジック</p>
-                            <p>PINK MAGIC</p>
-                            <p>$12.50</p>
-                        </div>
-                    </div>
-                    <p>Quantity: 1</p>
-                </div>
-                <div className="orderItem">
-                    <div  className="orderItemDetails">
-                        <div className="orderItemImg">
-                            <img src={'./1small.PNG'} alt="" />
-                        </div>
-                        <div>
-                            <p className="orderJpnTitle">ピンクマジック</p>
-                            <p>PINK MAGIC</p>
-                            <p>$12.50</p>
-                        </div>
-                    </div>
-                    <p>Quantity: 1</p>
-                </div>
-                <div className="orderItem">
-                    <div  className="orderItemDetails">
-                        <div className="orderItemImg">
-                            <img src={'./1small.PNG'} alt="" />
-                        </div>
-                        <div>
-                            <p className="orderJpnTitle">ピンクマジック</p>
-                            <p>PINK MAGIC</p>
-                            <p>$12.50</p>
-                        </div>
-                    </div>
-                    <p>Quantity: 1</p>
-                </div>
-                <div className="orderItem">
-                    <div  className="orderItemDetails">
-                        <div className="orderItemImg">
-                            <img src={'./1small.PNG'} alt="" />
-                        </div>
-                        <div>
-                            <p className="orderJpnTitle">ピンクマジック</p>
-                            <p>PINK MAGIC</p>
-                            <p>$12.50</p>
-                        </div>
-                    </div>
-                    <p>Quantity: 1</p>
-                </div>
-                <div className="orderItem">
-                    <div  className="orderItemDetails">
-                        <div className="orderItemImg">
-                            <img src={'./1small.PNG'} alt="" />
-                        </div>
-                        <div>
-                            <p className="orderJpnTitle">ピンクマジック</p>
-                            <p>PINK MAGIC</p>
-                            <p>$12.50</p>
-                        </div>
-                    </div>
-                    <p>Quantity: 1</p>
-                </div>
-                <div className="orderItem">
-                    <div  className="orderItemDetails">
-                        <div className="orderItemImg">
-                            <img src={'./1small.PNG'} alt="" />
-                        </div>
-                        <div>
-                            <p className="orderJpnTitle">ピンクマジック</p>
-                            <p>PINK MAGIC</p>
-                            <p>$12.50</p>
-                        </div>
-                    </div>
-                    <p>Quantity: 1</p>
-                </div>
+                <OrderItem />
             </div>
             <div className="orderBar"></div>
             <div className="orderTotal">
