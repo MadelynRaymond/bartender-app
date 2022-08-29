@@ -10,6 +10,7 @@ export default function LandingPage() {
         <p className="title">Neon <FontAwesomeIcon icon={faMartiniGlass} /></p>
         <div className="navRight">
             <p>Menu</p>
+            <p>Cart</p>
             <p>Staff Portal</p>
         </div>
     </div>
