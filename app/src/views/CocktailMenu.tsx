@@ -5,7 +5,7 @@ export default function CocktailMenu() {
   return (
     <div>
         <div className="menuContent">
-        <h1>Signature Cocktails</h1>
+          <h1>Signature Cocktails</h1>
         <div className="cocktails">
           <div style={{backgroundImage: 'url("./1.PNG")'}} className="cocktail">
             <div className="cocktailNames">

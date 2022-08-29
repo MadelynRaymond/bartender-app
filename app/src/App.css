@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,300&family=Mrs+Sheppards&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +18,7 @@ body{
     max-width: 1200px;
 }
 
-h1{
+.menuContent h1{
     
     color: white;
     font-size: 1.25rem;
@@ -36,8 +35,6 @@ h1{
 .cocktail{
     height: 25rem;
     width: 20rem;
-    background-color: blue;
-    background-image: url("./1.png");
     background-position: center center;
     background-size: cover;
     padding: 0.75rem 1rem;
@@ -58,7 +55,7 @@ h1{
 .cocktail button{
     border: 0;
     color: white;
-    background-color: rgb(253, 51, 128);
+    background-color: rgb(170, 0, 65);
     border-radius: 5px;
     box-shadow: 1px;
     font-family: 'Montserrat', sans-serif;
@@ -71,5 +68,91 @@ h1{
     background-color: rgb(31, 31, 59);
 }
 
+.landing{
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: center;
+    
+}
 
+.landingImage{
+
+    border-radius: 1rem;
+    width: 100%;
+    height: 77vh;
+    background-position: center center;
+    background-size:auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+
+.landingImage button{
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    border-radius: 20px;
+    background-color: rgb(255, 251, 0);
+    box-shadow: rgba(190, 0, 73, 0.5) 0px 5px;
+    border: none;
+    padding: 1rem 2.5rem;
+    margin-left: 6.25rem;
+
+}
+
+.landingImage button:hover{
+    color: white;
+    background-color: rgba(190, 0, 73);
+    box-shadow: rgb(255, 251, 0, 0.5) 0px 5px;
+    font-weight: 500;
+
+}
+
+.landingImageContent {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+}
+
+.neon{
+    font-size: 10rem;
+    color:rgb(255, 238, 0);
+    font-family: 'Mrs Sheppards', cursive;
+    line-height: 8rem;
+    text-shadow: 4px 4px 1px rgba(190, 0, 73, 0.65);
+
+}
+
+.tagline{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.nav{
+    padding: 2rem;
+    color: white;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content:space-between;
+    gap: 5rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+
+.navRight{
+    display: flex;
+    gap: 5rem;
+}
+
+.title{
+    font-size: 2rem;
+    font-family: 'Mrs Sheppards', cursive;
+    letter-spacing: 2px;
+}
 
