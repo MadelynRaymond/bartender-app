@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom'
 import './App.css'
+import Cart from './views/Cart'
 import CocktailMenu from './views/CocktailMenu'
 import LandingPage from './views/LandingPage'
 function App() {
@@ -23,7 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage/>}></Route>
           <Route path="/Menu" element={<CocktailMenu/>}></Route>
-          <Route path="/Cart" element={<CocktailMenu/>}></Route>
+          <Route path="/Cart" element={<Cart/>}></Route>
           <Route path="/StaffLogin" element={<CocktailMenu/>}></Route>
           <Route path="/OrderQueue" element={<CocktailMenu/>}></Route>
         </Routes>
