@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function LandingPage() {
   return (
@@ -10,7 +11,7 @@ export default function LandingPage() {
                         <h1 className="neon">NEON</h1>
                         <p className="tagline">luxury bar & lounge</p>
                     </div>
-                    <button>Order Now</button>
+                    <Link to="/Menu"><button>Order Now</button></Link>
                 </section>
             </div>
         </div>
