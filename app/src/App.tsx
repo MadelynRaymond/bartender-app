@@ -6,6 +6,7 @@ import './App.css'
 import Cart from './views/Cart'
 import CocktailMenu from './views/CocktailMenu'
 import LandingPage from './views/LandingPage'
+import Login from './views/Login'
 import OrderQueue from './views/OrderQueue'
 function App() {
   const [count, setCount] = useState(0)
@@ -26,7 +27,7 @@ function App() {
           <Route path="/" element={<LandingPage/>}></Route>
           <Route path="/Menu" element={<CocktailMenu/>}></Route>
           <Route path="/Cart" element={<Cart/>}></Route>
-          <Route path="/StaffLogin" element={<CocktailMenu/>}></Route>
+          <Route path="/StaffLogin" element={<Login/>}></Route>
           <Route path="/OrderQueue" element={<OrderQueue/>}></Route>
         </Routes>
       </BrowserRouter>
