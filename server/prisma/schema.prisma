@@ -19,8 +19,9 @@ model Cocktail{
   cocktailId Int @id @default(autoincrement())
   englishName String @unique
   japaneseName String @unique
-  cost Decimal
-  image String
+  price Decimal
+  img String
+  icon String
   includedIn OrderItem[]
 }
 

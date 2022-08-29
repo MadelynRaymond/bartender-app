@@ -8,13 +8,14 @@ class Cocktail {
     constructor() {
     }
     static async postCocktail(body) {
-        const { englishName, japaneseName, cost, image } = body;
+        const { englishName, japaneseName, price, img, icon } = body;
         const cocktail = await prisma_1.default.cocktail.create({
             data: {
                 englishName,
                 japaneseName,
-                cost,
-                image
+                price,
+                img,
+                icon
             }
         });
         return cocktail;

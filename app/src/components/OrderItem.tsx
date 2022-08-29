@@ -1,16 +1,22 @@
 import React from 'react'
 
-export default function OrderItem() {
+type OrderItemProps = {
+    japaneseName: string,
+    englishName: string,
+    price: number,
+    icon: string
+}
+export default function OrderItem({japaneseName, englishName, price, icon}:OrderItemProps) {
   return (
         <div className="orderItem">
             <div  className="orderItemDetails">
                 <div className="orderItemImg">
-                    <img src={'./1small.PNG'} alt="" />
+                    <img src={`./${icon}`} alt="" />
                 </div>
                 <div>
-                    <p className="orderJpnTitle">ピンクマジック</p>
-                    <p>PINK MAGIC</p>
-                    <p>$12.50</p>
+                    <p className="orderJpnTitle">{japaneseName}</p>
+                    <p>{englishName}</p>
+                    <p>{price}</p>
                 </div>
             </div>
             <p>Quantity: 1</p>

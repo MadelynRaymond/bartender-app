@@ -7,7 +7,15 @@ import { getCocktailMenu, postCocktail } from './controllers/menuController';
 import { getOrders, postOrder } from './controllers/orderController';
 
 const app = express()
+
+app.use(cors({
+    credentials: true,
+    origin: '*'
+}))
+
 app.use(express.json())
+
+
 const port = 8080
 
 app.post('/Staff', postStaffMember)

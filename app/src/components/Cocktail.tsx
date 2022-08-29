@@ -8,11 +8,10 @@ type CocktailProps = {
 }
 
 export default function Cocktail({japaneseName, englishName, price, img}:CocktailProps) {
-    
 
   return (
     <div>
-        <div style={{backgroundImage: `${img}`}} className="cocktail">
+        <div style={{backgroundImage: `url("./${img}")`}} className="cocktail">
             <div className="cocktailNames">
                 <p className="japaneseName">{japaneseName}</p>
                 <p className="englishName">{englishName}</p>

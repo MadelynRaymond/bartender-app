@@ -4,10 +4,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const cors_1 = __importDefault(require("cors"));
 const staffController_1 = require("./controllers/staffController");
 const menuController_1 = require("./controllers/menuController");
 const orderController_1 = require("./controllers/orderController");
 const app = (0, express_1.default)();
+app.use((0, cors_1.default)({
+    credentials: true,
+    origin: '*'
+}));
 app.use(express_1.default.json());
 const port = 8080;
 app.post('/Staff', staffController_1.postStaffMember);

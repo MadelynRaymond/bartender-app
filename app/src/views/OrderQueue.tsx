@@ -12,7 +12,7 @@ export default function OrderQueue() {
         </div>
         <div className="orderItems">
             <QueueItem />
-            <QueueItem />
+            
         </div>
     </div>
 </div>
