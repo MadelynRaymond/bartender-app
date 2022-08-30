@@ -26,18 +26,27 @@ const customStyles = {
   };
 
 export default function Cart({open, closeCart}: {open: boolean, closeCart: () => void}) {
-
-    
     const {condensedCart} = React.useContext(CartContext) as CartContextType
-    const confirmOrder = () => {
+
+    const postOrder = async (orderItems: any[]) => {
+
+      await axios.post('http://localhost:8080/Orders', {contains: [...orderItems]})
+    }
+
+    const close = () => {
       closeCart()
+    }
+    const confirmOrder = async () => {
+      const orderItems = condensedCart.map((item) => ({cocktailId: item.cocktail.cocktailId, quantity: item.quantity}))
+      await postOrder(orderItems)
+      close()
     }
 
   return (
     <div className="cartContainer">
         <Modal
         isOpen={open}
-        onRequestClose={confirmOrder}
+        onRequestClose={close}
         style={customStyles}
         >
             <div className="cart">
