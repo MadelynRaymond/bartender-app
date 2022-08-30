@@ -24,9 +24,9 @@ function App() {
       <div className="nav">
           <NavLink to="/"><p className="title">NEON ネオン</p></NavLink>
           <div className="navRight">
-              <NavLink to="/Menu"><p>Menu  <FontAwesomeIcon icon={faMartiniGlass} /></p></NavLink>
-              <NavLink to="/Menu"><p onClick={() => setModalOpen()} style={{color: 'black', cursor: 'pointer'}}>Cart <FontAwesomeIcon icon={faCartShopping} /></p></NavLink>
-              <NavLink to="/OrderQueue"><p>Staff  <FontAwesomeIcon icon={faUserTie} /></p></NavLink>
+              <NavLink to="/Menu"><p>Menu</p></NavLink>
+              <NavLink to="/Menu"><p onClick={() => setModalOpen()} style={{color: 'black', cursor: 'pointer'}}>Cart</p></NavLink>
+              <NavLink to="/OrderQueue"><p>Order Queue</p></NavLink>
           </div>
       </div>
         <Routes>

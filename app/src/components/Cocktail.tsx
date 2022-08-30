@@ -28,7 +28,7 @@ export default function Cocktail(props:CocktailProps) {
             <div className="cocktailNames">
                 <p className="japaneseName">{props.japaneseName}</p>
                 <p className="englishName">{props.englishName}</p>
-                <p className="price">{props.price}</p>
+                <p className="price">${props.price}</p>
             </div>
             <button onClick={handleClick}>Add to Cart</button>
         </div>

@@ -25,7 +25,7 @@ export default function CocktailMenu() {
     <div>
         {<Cart open={isOpen} closeCart={setModalClosed}/>}
         <div className="menuContent">
-          <h1>Signature Cocktails</h1>
+          <h1>SIGNATURE COCKTAILS:</h1>
         <div className="cocktails">
           {data.length > 0 && data.map(cocktail => 
           <Cocktail key={cocktail.cocktailId} 

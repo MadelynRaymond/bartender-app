@@ -23,7 +23,6 @@ export default function QueueItem({cocktail, quantity, orderId}:QueueItemProps) 
           </div>
       </div>
       <div className="orderItemRight">
-          <div><button><FontAwesomeIcon icon={faCheck} /></button></div>
           <p>Order #{orderId}</p>
       </div>
     </div>

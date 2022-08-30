@@ -50,9 +50,12 @@ export default function Cart({open, closeCart}: {open: boolean, closeCart: () =>
         style={customStyles}
         >
             <div className="cart">
-                <div className="cartTitles">
-                    <p>Order Summary</p>
-                    <p className="orderNote">Note: Pick-up not available. No drinking is allowed outside of the bar.</p>
+              <div className="cartTitles">
+                <div className="exit">
+                  <button onClick={close}>Exit</button>
+                </div>
+                  <p>Order Summary</p>
+                  <p className="orderNote">Note: Pick-up not available. No drinking is allowed outside of the bar.</p>
                 </div>
                 <div className="orderItems">
                     {condensedCart.length > 0 && condensedCart.map(item =>
