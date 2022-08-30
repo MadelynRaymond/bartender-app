@@ -1,23 +1,36 @@
 import React from 'react'
+import { CartContext, CartContextType } from '../context/cartContext'
+import { ModalContext, ModalContextType } from '../context/modal'
+import { OrderItem } from './OrderItem'
 
-type CocktailProps = {
+export type CocktailProps = {
+    cocktailId: number,
     japaneseName: string,
     englishName: string,
     price: number,
-    img: string
+    img: string,
+    icon: string
 }
 
-export default function Cocktail({japaneseName, englishName, price, img}:CocktailProps) {
+export default function Cocktail(props:CocktailProps) {
+
+  const {addToCart} = React.useContext(CartContext) as CartContextType
+  const {setModalOpen} = React.useContext(ModalContext) as ModalContextType
+
+  function handleClick(){
+    addToCart(props as OrderItem)
+    setModalOpen()
+  }
 
   return (
     <div>
-        <div style={{backgroundImage: `url("./${img}")`}} className="cocktail">
+        <div style={{backgroundImage: `url("./${props.img}")`}} className="cocktail">
             <div className="cocktailNames">
-                <p className="japaneseName">{japaneseName}</p>
-                <p className="englishName">{englishName}</p>
-                <p className="price">{price}</p>
+                <p className="japaneseName">{props.japaneseName}</p>
+                <p className="englishName">{props.englishName}</p>
+                <p className="price">{props.price}</p>
             </div>
-            <button>Add to Cart</button>
+            <button onClick={handleClick}>Add to Cart</button>
         </div>
     </div>
   )

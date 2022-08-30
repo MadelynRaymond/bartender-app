@@ -1,12 +1,17 @@
 import React from 'react'
 
-type OrderItemProps = {
+export type OrderItem = {
+    cocktailId: number,
     japaneseName: string,
     englishName: string,
     price: number,
     icon: string
 }
-export default function OrderItem({japaneseName, englishName, price, icon}:OrderItemProps) {
+
+interface OrderItemProps extends OrderItem {
+    quantity: number
+}
+export default function OrderItem({japaneseName, englishName, price, icon, quantity}:OrderItemProps) {
   return (
         <div className="orderItem">
             <div  className="orderItemDetails">
@@ -19,7 +24,9 @@ export default function OrderItem({japaneseName, englishName, price, icon}:Order
                     <p>{price}</p>
                 </div>
             </div>
-            <p>Quantity: 1</p>
+            <p>Quantity: {quantity}</p>
         </div>
   )
 }
+
+
