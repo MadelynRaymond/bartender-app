@@ -18,6 +18,10 @@ body{
     
 }
 
+button{
+    cursor: pointer;
+}
+
 .menuContent{
     
     margin: 0 auto;
@@ -212,6 +216,7 @@ body{
     background-color: rgb(255, 238, 0);
     font-size: 1rem;
     font-weight: bold;
+
 }
 
 .orderNote{
